@@ -107,54 +107,54 @@ void loop()
 
     switch  (selectedFile) {
     case 0:
-      strcpy(filename, "spare1.bmp");
+      strcpy(filename, "0.bmp");
     case 1:
-      strcpy(filename, "alien.bmp");
+      strcpy(filename, "1.bmp");
       break;
     case 2:
-      strcpy(filename, "comet1.bmp");
+      strcpy(filename, "3.bmp");
       break;
     case 3:
-      strcpy(filename, "comet2.bmp");
+      strcpy(filename, "4.bmp");
       break;
     case 4:
-      strcpy(filename, "domo.bmp");
+      strcpy(filename, "5.bmp");
       break;
     case 5:
-      strcpy(filename, "flames.bmp");
+      strcpy(filename, "6.bmp");
       break;
     case 6:
-      strcpy(filename, "greatwave.bmp");
+      strcpy(filename, "7.bmp");
       break;
     case 7:
-      strcpy(filename, "mario.bmp");
+      strcpy(filename, "8.bmp");
       break;
     case 8:
-      strcpy(filename, "coin.bmp");
+      strcpy(filename, "9.bmp");
       break;
       case 9:
-      strcpy(filename, "shroom1.bmp");
+      strcpy(filename, "10.bmp");
       break;
       case 10:
-      strcpy(filename, "shroom2.bmp");
+      strcpy(filename, "11.bmp");
       break;
     case 11:
-      strcpy(filename, "oxhack.bmp");
+      strcpy(filename, "12.bmp");
       break;
     case 12:
-      strcpy(filename, "nyan.bmp");
+      strcpy(filename, "13.bmp");
       break;
     case 13:
-      strcpy(filename, "ShootingStar.bmp");
+      strcpy(filename, "14.bmp");
       break;
     case 14:
-      strcpy(filename, "sparkles.bmp");
+      strcpy(filename, "15.bmp");
       break;
     case 15:
-      strcpy(filename, "wave.bmp");
+      strcpy(filename, "16.bmp");
       break;
     case 16:
-      strcpy(filename, "spare.bmp");
+      strcpy(filename, "17.bmp");
       break;
     }
     /*
