@@ -108,6 +108,7 @@ void loop()
     switch  (selectedFile) {
     case 0:
       strcpy(filename, "0.bmp");
+      break;
     case 1:
       strcpy(filename, "1.bmp");
       break;
