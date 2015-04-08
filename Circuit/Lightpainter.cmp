@@ -1,0 +1,73 @@
+Cmp-Mod V01 Created by CvPcb (2014-02-26 BZR 4721)-product date = Wednesday, 08 April 2015 23:21:25
+
+BeginCmp
+TimeStamp = /55244C03;
+Reference = C1;
+ValeurCmp = 100u;
+IdModule  = Capacitors:cnp_7x4.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /55244C15;
+Reference = C2;
+ValeurCmp = 100u;
+IdModule  = Capacitors:cnp_7x4.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /55244BA4;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = Conectors 1:SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /55244BE4;
+Reference = R1;
+ValeurCmp = 470k;
+IdModule  = Discrete:R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /55244BF6;
+Reference = R2;
+ValeurCmp = 470k;
+IdModule  = Discrete:R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /55244BD7;
+Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = Discrete:SW_PUSH_SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55244BC5;
+Reference = SW2;
+ValeurCmp = SW_PUSH;
+IdModule  = Discrete:SW_PUSH_SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /5525A5E4;
+Reference = U1;
+ValeurCmp = 78L05;
+IdModule  = TJS:78L05-TO220-VERT;
+EndCmp
+
+BeginCmp
+TimeStamp = /55244B71;
+Reference = U2;
+ValeurCmp = Arduino_Nano_v3;
+IdModule  = TJS:ArduinoNano;
+EndCmp
+
+BeginCmp
+TimeStamp = /55244B85;
+Reference = U3;
+ValeurCmp = SD_Card_Socket;
+IdModule  = Conectors 1:SIL-8;
+EndCmp
+
+EndListe
