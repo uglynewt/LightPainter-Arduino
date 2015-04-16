@@ -1,6 +1,5 @@
 //#include <EEPROM.h>
 #include <Adafruit_NeoPixel.h>
-#include <Serial.h>
 #include <SD.h>
 
 
