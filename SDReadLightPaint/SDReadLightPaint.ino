@@ -1,7 +1,7 @@
 //#include <EEPROM.h>
 #include <Adafruit_NeoPixel.h>
 #include <SD.h>
-
+#include <SPI.h>
 
 /*
   Read image data from an SD card and display that on the Light Strip
