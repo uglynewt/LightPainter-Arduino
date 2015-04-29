@@ -15,6 +15,8 @@
 #define IMAGEWIDTH 60
 #define IMAGEHEIGHT 5
 #define DELAY 10  //time delay to display each pixel
+#define LIGHT_PIN 6
+#define CS_PIN 10
 
 uint32_t myImage[IMAGEWIDTH][IMAGEHEIGHT];
 int offset; // = 54; //File formatting offset (54 bytes for 'Compatible' BMP, 70 bytes for std. 
@@ -32,7 +34,7 @@ SdFile root;
 //   NEO_GRB     Pixels are wired for GRB bitstream
 //   NEO_KHZ400  400 KHz bitstream (e.g. FLORA pixels)
 //   NEO_KHZ800  800 KHz bitstream (e.g. High Density LED strip)
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, 6, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, CS_PIN, NEO_GRB + NEO_KHZ800);
 
 int startButton = 7;
 int selectButton = 8;
@@ -48,8 +50,8 @@ void setup()
   pinMode(startButton, INPUT);
   pinMode(selectButton, INPUT);
 
-  pinMode(10, OUTPUT);
-  if(!SD.begin(12)) {
+  pinMode(CS_PIN, OUTPUT);
+  if(!SD.begin(CS_PIN)) {
     Serial.println("SD Card reading failed.");
     return;
   }
