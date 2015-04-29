@@ -39,6 +39,27 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, LIGHT_PIN, NEO_GRB + NEO_KHZ800)
 int startButton = 7;
 int selectButton = 8;
 int selectedFile = 0;
+
+char basenames[][3] = {
+	"0",
+	"1",
+	"2",
+	"3",
+	"4",
+	"5",
+	"6",
+	"7",
+	"8",
+	"9",
+	"10",
+	"11",
+	"12",
+	"13",
+	"14",
+	"15",
+	"16"
+};
+
 void setup() 
 {
 
@@ -106,75 +127,8 @@ void loop()
     strip.show();
     delay(500); //Wait half a second to debounce the input.
 
-    switch  (selectedFile) {
-    case 0:
-      strcpy(filename, "0.bmp");
-      break;
-    case 1:
-      strcpy(filename, "1.bmp");
-      break;
-    case 2:
-      strcpy(filename, "3.bmp");
-      break;
-    case 3:
-      strcpy(filename, "4.bmp");
-      break;
-    case 4:
-      strcpy(filename, "5.bmp");
-      break;
-    case 5:
-      strcpy(filename, "6.bmp");
-      break;
-    case 6:
-      strcpy(filename, "7.bmp");
-      break;
-    case 7:
-      strcpy(filename, "8.bmp");
-      break;
-    case 8:
-      strcpy(filename, "9.bmp");
-      break;
-      case 9:
-      strcpy(filename, "10.bmp");
-      break;
-      case 10:
-      strcpy(filename, "11.bmp");
-      break;
-    case 11:
-      strcpy(filename, "12.bmp");
-      break;
-    case 12:
-      strcpy(filename, "13.bmp");
-      break;
-    case 13:
-      strcpy(filename, "14.bmp");
-      break;
-    case 14:
-      strcpy(filename, "15.bmp");
-      break;
-    case 15:
-      strcpy(filename, "16.bmp");
-      break;
-    case 16:
-      strcpy(filename, "17.bmp");
-      break;
-    }
-    /*
-      domo
-     alien
-     comet1
-     comet2
-     flames
-     greatwave
-     line
-     mario
-     oxhack
-     nyan
-     ShootingStar
-     sparkles
-     wave
-     
-     */
+    strncpy(filename, basenames[selectedFile],3);
+    strcat(filename,".bmp");
 
   } 
   else {
