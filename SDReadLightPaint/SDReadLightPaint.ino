@@ -34,7 +34,7 @@ SdFile root;
 //   NEO_GRB     Pixels are wired for GRB bitstream
 //   NEO_KHZ400  400 KHz bitstream (e.g. FLORA pixels)
 //   NEO_KHZ800  800 KHz bitstream (e.g. High Density LED strip)
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, CS_PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, LIGHT_PIN, NEO_GRB + NEO_KHZ800);
 
 int startButton = 7;
 int selectButton = 8;
